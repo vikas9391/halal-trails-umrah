@@ -1,0 +1,21 @@
+{
+  "name": "halal-trails-umrah-2026",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch server.js",
+    "start": "node server.js",
+    "check": "node --check server.js && node --check lib/pricing.js && node --check lib/store.js && node --check lib/email.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "multer": "^1.4.5-lts.2",
+    "resend": "^6.0.0",
+    "stripe": "^18.5.0"
+  }
+}
